@@ -1,0 +1,66 @@
+
+.Layout {
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+    background-size: auto 34%, auto 34%, auto 34%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-color: #262626;
+    min-height: 220px;
+}
+
+.right-bar {
+    right: 0;
+    background-image: url('img/woman.jpg'), url('img/city.jpg'), url('img/adult.jpg');
+    background-position: 54% 0, 40% 50%, 40% 101%;
+}
+
+.left-bar {
+    left: 0;
+    background-image: url('img/rocks.jpg'), url('img/girl.jpg'), url('img/portrait.jpg');
+    background-position: 40% 0, 63% 50%, 47% 101%;
+}
+
+.main {
+    padding: 0 150px;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    display: table-row;
+    height: 100%;
+}
+
+.mainInfoWrapper {
+    margin: 0 50px 50px 50px;
+}
+
+@media (max-height: 500px) {
+    .bar {
+        background-size: auto 51%, auto 51%;
+        background-repeat: no-repeat, no-repeat;
+    }
+
+    .left-bar {
+        background-image: url('img/rocks.jpg'), url('img/girl.jpg');
+        background-position: 40% 0, 63% 101%;
+    }
+
+    .right-bar {
+        background-image: url('img/city.jpg'), url('img/adult.jpg');
+        background-position: 40% 0, 40% 101%;
+    }
+}

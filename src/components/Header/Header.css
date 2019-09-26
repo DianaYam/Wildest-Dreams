@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Satisfy');
+
+.Header {
+    padding:90px 0;
+    position:relative;
+}
+
+.Header h1 {
+    font-family: 'Satisfy', cursive;
+    font-weight:bold;
+    text-align:center;
+    margin: 0 auto;
+    font-size:46px;
+    color:#000;
+}
+
+.Header p {
+    text-align:center;
+    font-size: 16px;
+    color: #4A4A4A;
+    position:absolute;
+    left:0;
+    right:0;
+    font-family: 'EB Garamond', serif;
+}
+
+.Header p:first-child {
+    top: 20px;
+}
+
+.Header p:last-child {
+    bottom: 20px;
+}
+
+
+
+
